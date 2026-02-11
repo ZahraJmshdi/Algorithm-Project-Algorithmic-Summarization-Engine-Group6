@@ -259,4 +259,3 @@ Average MERGE Similarity:   0.7290
 3. Devlin, J., Chang, M.-W., Lee, K., & Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. *NAACL*.
 
 ---
-se**: MIT
