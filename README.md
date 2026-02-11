@@ -164,8 +164,6 @@ cd Algorithm-Project-Algorithmic-Summarization-Engine-Group6
 # Install dependencies
 pip install -r requirements.txt
 
-# Download NLTK data (run Python once)
-python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 ```
 
 ### **2. Download Required Models**
