@@ -1,13 +1,13 @@
 # Algorithm-Project-Algorithmic-Summarization-Engine-Group6
 
-# 📝 TextRank-LLM Hybrid Summarization System
+# TextRank-LLM Hybrid Summarization System
 
 ## Project Title
 **Hybrid Text Summarization: Combining Traditional TextRank with LLM for Enhanced Summary Generation**
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 This project implements a **hybrid text summarization system** that combines two fundamentally different approaches:
 1. **TextRank** - A traditional graph-based extractive summarization algorithm
 2. **LLM (Small Language Model)** - A modern abstractive summarization model (T5-small)
@@ -16,7 +16,7 @@ The system then **merges** outputs from both methods using a semantic-aware ense
 
 ---
 
-## 🎯 Problem Definition
+## Problem Definition
 **Automatic text summarization** is the task of condensing a source document into a shorter version while preserving its most important information. Two main challenges exist:
 
 | Challenge | Description |
@@ -28,9 +28,9 @@ The system then **merges** outputs from both methods using a semantic-aware ense
 
 ---
 
-## 🧠 Algorithm Explanation
+## Algorithm Explanation
 
-### 📍 Phase 1: TextRank (Traditional)
+### Phase 1: TextRank (Traditional)
 **Reference Paper**: Mihalcea & Tarau (2004). "TextRank: Bringing Order into Texts"
 
 ```python
@@ -48,7 +48,7 @@ The system then **merges** outputs from both methods using a semantic-aware ense
 
 ---
 
-### 📍 Phase 2: Small Language Model
+### Phase 2: Small Language Model
 **Model**: `t5-small`
 
 ```python
@@ -65,7 +65,7 @@ The system then **merges** outputs from both methods using a semantic-aware ense
 
 ---
 
-### 📍 Phase 3: Semantic Ensemble Merger (Our Contribution)
+### Phase 3: Semantic Ensemble Merger (Our Contribution)
 
 The merger implements a **three-stage ensemble algorithm**:
 
@@ -95,7 +95,7 @@ ranked = sort(sentences, key=score, reverse=True)
 
 ---
 
-## 🤖 Role of LLM in This Project
+## Role of LLM in This Project
 
 | Role | Description |
 |------|-------------|
@@ -110,7 +110,7 @@ ranked = sort(sentences, key=score, reverse=True)
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```
 project/
@@ -136,7 +136,7 @@ project/
 
 ---
 
-## 📥 Sample Input/Output
+## Sample Input/Output
 
 ### **Input Article (CNN/DailyMail)**
 ```
@@ -153,10 +153,10 @@ LONDON, England (Reuters) -- British actress Kate Winslet has won a libel case a
 
 ---
 
-## 🚀 How to Run the Project
+## How to Run the Project
 
 ### **1. Installation**
-```bash
+```
 # Clone repository
 git clone https://github.com/ZahraJmshdi/Algorithm-Project-Algorithmic-Summarization-Engine-Group6.git
 cd Algorithm-Project-Algorithmic-Summarization-Engine-Group6
@@ -167,7 +167,7 @@ pip install -r requirements.txt
 ```
 
 ### **2. Download Required Models**
-```python
+```
 # GloVe embeddings for TextRank (300MB)
 # Option A: Automatic download (first run)
 from Phase1.Phase1 import TextRankSummarizer
@@ -179,7 +179,7 @@ unzip glove.6B.zip glove.6B.100d.txt
 ```
 
 ### **3. Run Single Article Test**
-```python
+```
 from Phase1.Phase1 import TextRankSummarizer
 from Phase2.Phase2 import LLMSummarizer
 from Phase3.Phase3_Merger import SummaryMerger
@@ -203,7 +203,7 @@ print(f"Merged Summary:\n{final}")
 ```
 ---
 
-## 📦 Requirements (requirements.txt)
+## Requirements (requirements.txt)
 
 ```txt
 # Core dependencies
@@ -250,7 +250,7 @@ Average MERGE Similarity:   0.7290
 
 ---
 
-## 📚 References
+## References
 
 1. Mihalcea, R., & Tarau, P. (2004). TextRank: Bringing Order into Texts. *EMNLP*.
 
