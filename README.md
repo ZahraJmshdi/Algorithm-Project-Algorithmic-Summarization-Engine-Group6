@@ -1,7 +1,5 @@
 # Algorithm-Project-Algorithmic-Summarization-Engine-Group6
 
-# TextRank-LLM Hybrid Summarization System
-
 ## Project Title
 **Hybrid Text Summarization: Combining Traditional TextRank with LLM for Enhanced Summary Generation**
 
